@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["enableLinkTracking"]);
+      (function() {
+        var u = "https://test1218.matomo.cloud/";
+        _paq.push(["setTrackerUrl", u + "matomo.php"]);
+        _paq.push(["setSiteId", "1"]);
+        _paq.push(["setDocumentTitle", "MyTestSite"]);
+        _paq.push(["trackPageView"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.async = true;
+        g.defer = true;
+        g.src = "//cdn.matomo.cloud/test1218.matomo.cloud/matomo.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <a href="#" onclick="_paq.push(['trackEvent', 'Menu', 'Freedom']);"
+      >Freedom page</a
+    >
+    <script src="src/index.js"></script>
+  </body>
+</html>
